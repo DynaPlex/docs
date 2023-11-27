@@ -47,9 +47,9 @@ If all unit testing has passed, we can add the executable. We will add an execut
 Setup
 ~~~~~
 
-Go to ``src/examples/executable_example`` and copy and paste the directory with its contents.
+Go to ``src/executables/executable_example`` and copy and paste the directory with its contents.
 Change the directory name to ``airplane_mdp``.
-In ``src/examples/CMakeLists.txt`` change the following:
+In ``src/executables/CMakeLists.txt`` change the following:
 
 .. code-block:: cmake
 
@@ -57,7 +57,7 @@ In ``src/examples/CMakeLists.txt`` change the following:
 	add_subdirectory(airplane_mdp) # Added
 
 
-Next go to ``src/examples/airplane_mdp/CMakeLists.txt`` and change:
+Next go to ``src/executables/airplane_mdp/CMakeLists.txt`` and change:
 
 
 .. code-block:: cmake
@@ -70,7 +70,7 @@ Rerunning cmake should enable you to select the target ``dp_airplane_mdp``. Note
 Define a run script
 ~~~~~~~~~~~~~~~~~~~
 
-In ``src/examples/airplane_mdp/airplane_mdp.cpp`` add the following code that runs DCL:
+In ``src/executables/airplane_mdp/airplane_mdp.cpp`` add the following code that runs DCL:
 
 .. code-block:: cpp
 
