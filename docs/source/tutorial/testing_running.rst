@@ -120,7 +120,7 @@ In ``src/executables/airplane_mdp/airplane_mdp.cpp`` add the following code that
 		try
 		{
 			//Create a trainer for the mdp, with appropriate configuratoin. 
-			auto dcl = dp.GetDCL(mdp, dcl_config, policy);
+			auto dcl = dp.GetDCL(mdp, policy, dcl_config);
 			//this trains the policy, and saves it to disk.
 			dcl.TrainPolicy();
 			//using a dcl instance that has same parameterization (i.e. same dcl_config, same mdp), we may recover the trained polciies.
