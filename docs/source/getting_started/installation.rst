@@ -34,6 +34,7 @@ Linux/Snellius
 
       cd bash
       source loadmodules.sh
+      cd .. #back to root
 
 **2. Build:**
 
@@ -63,7 +64,7 @@ Linux/Snellius
 
      .. code-block:: bash
 
-        cmake --build out/LinRel -- -j12 --target sometarget
+        cmake --build out/LinRel --target sometarget -j12
 
 **3. Run:**
     - Executables may be run from a compute node, that can be obtained as follows:
