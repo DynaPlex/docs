@@ -25,7 +25,7 @@ Follow these steps to set up your Python environment and install the necessary l
 
    conda env create -f python/environment.yml
 
-   This command sets up the Python virtual environment and installs the required libraries. Note that the initial installation may take some time.
+This command sets up the Python virtual environment and installs the required libraries. Note that the initial installation may take some time.
 
 2. **Update CMake User Presets**
 
@@ -41,7 +41,7 @@ Follow these steps to set up your Python environment and install the necessary l
    pip install pybind11-stubgen
    pybind11-stubgen -o ./ dp
 
-   These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
+These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
 
 4. **Build PyBindings in Your C++ IDE**
 
