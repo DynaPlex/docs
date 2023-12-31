@@ -49,7 +49,7 @@ These commands generate Python stub files with a ".pyi" extension. These stub fi
 
 5. **Start Using Python with DynaPlex**
 
-   You are now ready to use Python with DynaPlex. Explore various example usages provided in the ``python/scripts`` folder. Note that if you make changes to the C++ code, you will need to rebuild the PyBindings.
+   You are now ready to use Python with DynaPlex. Explore various example usages provided in the ``python/scripts`` folder. For instance, we show how you can load your MDP, run the DCL algorithm using different neural networks, or train a different RL-algorithm, for instance PPO. Note that we provide RL-algorithms via the Python library ``tianshou``, see: https://tianshou.readthedocs.io/en/stable/ for the documentation and all available algorithms. Note that if you make changes to the C++ code, you will need to rebuild the PyBindings.
 
 Additional Notes (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
