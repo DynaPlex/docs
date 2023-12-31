@@ -21,25 +21,25 @@ Follow these steps to set up your Python environment and install the necessary l
 
    Open your Anaconda prompt or the terminal in your Python IDE. Navigate to the DynaPlex folder and run the following command::
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      conda env create -f python/environment.yml
+   conda env create -f python/environment.yml
 
    This command sets up the Python virtual environment and installs the required libraries. Note that the initial installation may take some time.
 
 2. **Update CMake User Presets**
 
-   Open your `CMakeUserPresets.json` file and ensure that the `WinPB` block contains the correct paths to your newly created Python environment. Additionally, set ``dynaplex_enable_pythonbindings`` to ``true``.
+   Open your ``CMakeUserPresets.json`` file and ensure that the ``WinPB`` block contains the correct paths to your newly created Python environment. Additionally, set ``dynaplex_enable_pythonbindings`` to ``true``.
 
 3. **Generate Python Stub Files**
 
    Generate Python stub files for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      pip install -e .
-      pip install pybind11-stubgen
-      pybind11-stubgen -o ./ dp
+   pip install -e .
+   pip install pybind11-stubgen
+   pybind11-stubgen -o ./ dp
 
    These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
 
