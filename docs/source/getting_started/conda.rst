@@ -55,10 +55,10 @@ If you're working on Snellius, you can load Conda via module environments using 
 
 For those that make changes to the C++ core library, the Python stub files need to be regenerated. Stub files are used for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
 
-.. code-block:: bash
+   .. code-block:: bash
 
-   pip install -e .
-   pip install pybind11-stubgen
-   pybind11-stubgen -o ./ dp
+      pip install -e .
+      pip install pybind11-stubgen
+      pybind11-stubgen -o ./ dp
 
 These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
