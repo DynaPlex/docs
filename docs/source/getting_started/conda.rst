@@ -53,7 +53,7 @@ If you're working on Snellius, you can load Conda via module environments using 
       module load 2022
       module load ...
 
-For those that make changes to the C++ core library, the Python stub files need to be regenerated. Stub files are used for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
+For those that make changes to the C++ core library, the Python stub files need to be regenerated. Stub files are used for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands:
 
    .. code-block:: bash
 
