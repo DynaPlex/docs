@@ -31,6 +31,10 @@ This command sets up the Python virtual environment and installs the required li
 
    Open your ``CMakeUserPresets.json`` file and ensure that the ``WinPB`` block contains the correct paths to your newly created Python environment. Additionally, set ``dynaplex_enable_pythonbindings`` to ``true``.
 
+.. hint::
+
+   Run ``conda info --envs`` to find the path to your Python virtual environments.
+
 3. **Generate Python Stub Files**
 
    Generate Python stub files for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
