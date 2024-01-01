@@ -35,23 +35,11 @@ This command sets up the Python virtual environment and installs the required li
 
    Run ``conda info --envs`` to find the path to your Python virtual environments.
 
-3. **Generate Python Stub Files**
-
-   Generate Python stub files for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
-
-.. code-block:: bash
-
-   pip install -e .
-   pip install pybind11-stubgen
-   pybind11-stubgen -o ./ dp
-
-These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
-
-4. **Build PyBindings in Your C++ IDE**
+3. **Build PyBindings in Your C++ IDE**
 
    In your C++ IDE, build the PyBindings to complete the setup.
 
-5. **Start Using Python with DynaPlex**
+4. **Start Using Python with DynaPlex**
 
    You are now ready to use Python with DynaPlex. Explore various example usages provided in the ``python/scripts`` folder. For instance, we show how you can load your MDP, run the DCL algorithm using different neural networks, or train a different RL-algorithm, for instance PPO. Note that we provide RL-algorithms via the Python library ``tianshou``, see: https://tianshou.readthedocs.io/en/stable/ for the documentation and all available algorithms. Note that if you make changes to the C++ code, you will need to rebuild the PyBindings.
 
@@ -64,3 +52,13 @@ If you're working on Snellius, you can load Conda via module environments using 
 
       module load 2022
       module load ...
+
+For those that make changes to the C++ core library, the Python stub files need to be regenerated. Stub files are used for type hinting, navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following commands::
+
+.. code-block:: bash
+
+   pip install -e .
+   pip install pybind11-stubgen
+   pybind11-stubgen -o ./ dp
+
+These commands generate Python stub files with a ".pyi" extension. These stub files provide type hint information for Python code, including third-party libraries.
