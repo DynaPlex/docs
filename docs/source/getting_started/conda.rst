@@ -35,7 +35,7 @@ This command sets up the Python virtual environment and installs the required li
 
    Run ``conda info --envs`` to find the path to your Python virtual environments.
 
-4. **Install DynaPlex as Python package**
+3. **Install DynaPlex as Python package**
 
    Navigate to the ``DynaPlex/python`` folder in your Anaconda prompt or Python IDE terminal and run the following command:
 
